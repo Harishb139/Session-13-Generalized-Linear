@@ -1,0 +1,88 @@
+Session 13 – Generalized Linear
+Assignment – 1
+
+1.
+a.
+> yeast <- read.csv("C:/Users/Harish/Desktop/Assignments of Acadgild - Copy/yeast.txt", sep="")
+>   View(yeast)
+> res <- cor.test(yeast$mcg, yeast$gvh, 
++                 method = "pearson")
+> res
+
+	Pearson's product-moment correlation
+
+data:  yeast$mcg and yeast$gvh
+t = 27.526, df = 1482, p-value < 2.2e-16
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ 0.5469332 0.6143348
+sample estimates:
+      cor 
+0.5816314 
+
+> res <- cor.test(yeast$gvh, yeast$alm, 
++                 method = "pearson")
+> res
+
+	Pearson's product-moment correlation
+
+data:  yeast$gvh and yeast$alm
+t = -10.873, df = 1482, p-value < 2.2e-16
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ -0.3182836 -0.2240126
+sample estimates:
+    cor 
+-0.2718 
+
+> res <- cor.test(yeast$alm, yeast$mit, 
++                 method = "pearson")
+> res
+
+	Pearson's product-moment correlation
+
+data:  yeast$alm and yeast$mit
+t = 2.3011, df = 1482, p-value = 0.02152
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ 0.008809399 0.110219289
+sample estimates:
+      cor 
+0.0596683 
+
+> res <- cor.test(yeast$mit, yeast$erl, 
++                 method = "pearson")
+> res
+
+	Pearson's product-moment correlation
+
+data:  yeast$mit and yeast$erl
+t = -0.22832, df = 1482, p-value = 0.8194
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ -0.05679921  0.04496851
+sample estimates:
+         cor 
+-0.005930705 
+
+> res <- cor.test(yeast$erl, yeast$mcg, 
++                 method = "pearson")
+> res
+
+	Pearson's product-moment correlation
+
+data:  yeast$erl and yeast$mcg
+t = 2.5046, df = 1482, p-value = 0.01237
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ 0.01408241 0.11542587
+sample estimates:
+       cor 
+0.06492154 
+
+> 
+
+
+
+b. Data set is different and question as asked (“A mail has been requested”)
+c. Data set is different and question as asked (“A mail has been requested”)
